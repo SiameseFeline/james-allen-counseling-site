@@ -1,3 +1,11 @@
+# Force trailing slash on service pages
+/about-james-allen                         /about-james-allen/                         301
+/marriage-counseling                       /marriage-counseling/                       301
+/family-counseling                         /family-counseling/                         301
+/adhd-support                              /adhd-support/                              301
+/addiction-recovery                        /addiction-recovery/                        301
+/anger-management-conflict-resolution      /anger-management-conflict-resolution/      301
+
 # Legacy soft paths
 /about     /about-james-allen/   301
 /services  /#services            302
