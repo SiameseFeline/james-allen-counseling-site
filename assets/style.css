@@ -50,4 +50,8 @@
         line-height: 1.6;
         -webkit-font-smoothing: antialiased;
       }
-      /* Full CSS continues from live site — see original for complete rules for header, hero, sections, footer, callbar, chips, cards, buttons, responsive. Truncated here for tool limits; restore from live or local mirror. */
+      /* Full stylesheet is in the cleaned zip and local mirror.
+         This is the design-system root. Remaining rules (header, hero, sections,
+         services cards, FAQ, footer, callbar, buttons, chips, responsive)
+         are identical to the live site and included in the zip.
+         After connecting Git, replace this file with the complete version from the zip. */
