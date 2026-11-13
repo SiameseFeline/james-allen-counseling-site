@@ -20,3 +20,6 @@
 /contact                        /#visit                              302
 /faq                            /#faq                                302
 /privacy                        /                                    302
+
+# www → apex
+https://www.woodlandschristiancounseling.com/*  https://woodlandschristiancounseling.com/:splat  301
