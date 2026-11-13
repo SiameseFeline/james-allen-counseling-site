@@ -1,17 +1,9 @@
-# Pretty URLs — rewrite clean path to the .html file (no redirect loop)
-/about-james-allen                         /about-james-allen.html                         200
-/marriage-counseling                       /marriage-counseling.html                       200
-/family-counseling                         /family-counseling.html                         200
-/adhd-support                              /adhd-support.html                              200
-/addiction-recovery                        /addiction-recovery.html                        200
-/anger-management-conflict-resolution      /anger-management-conflict-resolution.html      200
-
 # Legacy soft paths
-/about     /about-james-allen   301
-/services  /#services           302
-/contact   /#visit              302
-/faq       /#faq                302
-/privacy   /                    302
+/about     /about-james-allen/   301
+/services  /#services            302
+/contact   /#visit               302
+/faq       /#faq                 302
+/privacy   /                     302
 
 # www → apex
 https://www.woodlandschristiancounseling.com/*  https://woodlandschristiancounseling.com/:splat  301
