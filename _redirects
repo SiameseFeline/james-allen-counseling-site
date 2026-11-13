@@ -1,0 +1,22 @@
+# Pretty URLs (rewrite so clean path serves the .html file)
+/about-james-allen              /about-james-allen.html              200
+/marriage-counseling            /marriage-counseling.html            200
+/family-counseling              /family-counseling.html              200
+/adhd-support                   /adhd-support.html                   200
+/addiction-recovery             /addiction-recovery.html             200
+/anger-management-conflict-resolution  /anger-management-conflict-resolution.html  200
+
+# Force .html requests to clean canonical
+/about-james-allen.html         /about-james-allen                   301
+/marriage-counseling.html       /marriage-counseling                 301
+/family-counseling.html         /family-counseling                   301
+/adhd-support.html              /adhd-support                        301
+/addiction-recovery.html        /addiction-recovery                  301
+/anger-management-conflict-resolution.html  /anger-management-conflict-resolution  301
+
+# Soft legacy paths → real pages
+/about                          /about-james-allen                   301
+/services                       /#services                           302
+/contact                        /#visit                              302
+/faq                            /#faq                                302
+/privacy                        /                                    302
