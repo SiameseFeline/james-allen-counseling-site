@@ -21,5 +21,5 @@
 /faq                            /#faq                                302
 /privacy                        /                                    302
 
-# www → apex
+# www → apex (already configured in CF, kept here for completeness)
 https://www.woodlandschristiancounseling.com/*  https://woodlandschristiancounseling.com/:splat  301
