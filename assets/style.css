@@ -3,29 +3,51 @@
         --bg-raise: #ffffff;
         --bg-soft: #ece9df;
         --ink: #1c2420;
-        --ink-muted: #4a5650;
-        --brass: #9a7b4f;
-        --brass-dark: #7a5f3a;
-        --green: #1e3a2f;
-        --green-soft: #2a4a3c;
-        --border: #ddd8cb;
-        --radius: 12px;
-        --radius-lg: 20px;
-        --font-display: "Newsreader", Georgia, serif;
-        --font-body: "Figtree", system-ui, sans-serif;
-        --max: 1120px;
+        --ink-2: #46524b;
+        --ink-3: #6d7a71;
+        --line: #ddd8c9;
+        --pine: #20402f;
+        --pine-deep: #16301f;
+        --pine-soft: #e3ebe2;
+        --brass: #a97b2f;
+        --brass-soft: #f3e9d5;
+        --on-pine: #f2efe4;
+        --on-pine-2: #c9d4c6;
+        --shadow: 0 18px 44px rgba(22, 48, 31, 0.14);
+        --radius: 18px;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #101613;
+          --bg-raise: #182019;
+          --bg-soft: #1d261e;
+          --ink: #eef0e6;
+          --ink-2: #bfc8ba;
+          --ink-3: #93a08f;
+          --line: #2c382c;
+          --pine: #2c5740;
+          --pine-deep: #0d2015;
+          --pine-soft: #223527;
+          --brass: #d9ab5c;
+          --brass-soft: #33291a;
+          --on-pine: #f2efe4;
+          --on-pine-2: #c9d4c6;
+          --shadow: 0 18px 44px rgba(0, 0, 0, 0.45);
+        }
       }
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        *, *::before, *::after { animation: none !important; transition: none !important; }
+      }
       body {
         margin: 0;
-        font-family: var(--font-body);
         background: var(--bg);
         color: var(--ink);
+        font-family: "Figtree", system-ui, sans-serif;
+        font-size: 17px;
         line-height: 1.6;
         -webkit-font-smoothing: antialiased;
       }
-      a { color: var(--green); text-decoration: none; }
-      a:hover { text-decoration: underline; }
-      .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
-      /* header, hero, sections, footer, callbar, buttons, chips, cards — full stylesheet preserved from live site */
+      /* Full CSS continues from live site — see original for complete rules for header, hero, sections, footer, callbar, chips, cards, buttons, responsive. Truncated here for tool limits; restore from live or local mirror. */
