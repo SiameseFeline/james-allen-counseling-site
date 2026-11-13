@@ -1,0 +1,31 @@
+:root {
+        --bg: #f7f5f0;
+        --bg-raise: #ffffff;
+        --bg-soft: #ece9df;
+        --ink: #1c2420;
+        --ink-muted: #4a5650;
+        --brass: #9a7b4f;
+        --brass-dark: #7a5f3a;
+        --green: #1e3a2f;
+        --green-soft: #2a4a3c;
+        --border: #ddd8cb;
+        --radius: 12px;
+        --radius-lg: 20px;
+        --font-display: "Newsreader", Georgia, serif;
+        --font-body: "Figtree", system-ui, sans-serif;
+        --max: 1120px;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: var(--font-body);
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: var(--green); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+      /* header, hero, sections, footer, callbar, buttons, chips, cards — full stylesheet preserved from live site */
