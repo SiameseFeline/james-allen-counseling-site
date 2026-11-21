@@ -2,21 +2,37 @@
 
 Lean static site for **woodlandschristiancounseling.com** (James Allen & Associates Christian Counseling, The Woodlands, TX).
 
-Deployed on **Cloudflare Pages**. DNS via Cloudflare.
+## Canonical deploy path (one path only)
 
-## Architecture (lean + reliable)
+**Cloudflare Pages, connected to this GitHub repo.**
 
-- Pure static HTML + one CSS + one JS + optimized images
-- No build step required
-- Clean URLs via `_redirects` (pretty paths serve `.html` files; `.html` 301s to clean)
-- Security headers in `_headers` (CSP, HSTS, etc.)
-- Sitemap + robots + `llms.txt` for agents/SEO
-- Schema.org JSON-LD on pages
-- Mobile call-bar + accessible markup
+| Setting | Value |
+|---------|--------|
+| Project | `james-allen-counseling-site` |
+| Production branch | `main` |
+| Build command | *(empty — no build)* |
+| Output directory | `/` (repo root) |
+| Custom domains | `woodlandschristiancounseling.com`, `www` → apex 301 |
+
+Do **not** use Wrangler CLI deploy or Direct Upload for routine releases. Git push → Pages auto-deploy is the only production path.
+
+There is no `wrangler.toml` in this repo and none is required for Pages static hosting.
+
+## Workflow: branch → PR → merge (do not push straight to `main`)
+
+1. Create a feature branch from `main`
+2. Make focused commits
+3. Open a pull request into `main`
+4. Wait for the **Smoke** GitHub Action to pass
+5. Preview the Pages preview deployment if Cloudflare creates one for the branch/PR
+6. Merge the PR
+7. Confirm production: https://woodlandschristiancounseling.com/
+
+`main` is protected: PRs required, force-push and branch deletion blocked. Status check **smoke** is required once configured in branch rules.
+
+Solo maintainer tip: do **not** require an extra human approval you cannot get. Require PR + checks only.
 
 ## Local preview
-
-Any static server:
 
 ```bash
 npx serve .
@@ -24,29 +40,22 @@ npx serve .
 python3 -m http.server 8080
 ```
 
-## Deploy
+Inspect desktop and mobile before merging HTML/CSS changes.
 
-1. Connect this repo to a Cloudflare Pages project
-2. Build command: (none) or `exit 0`
-3. Output directory: `/` (root)
-4. Custom domain: woodlandschristiancounseling.com (already on CF DNS)
+## Architecture
 
-## SEO notes
+- Pure static HTML + one CSS + one JS + images
+- No build step
+- Clean URLs via directory pages + `_redirects`
+- Security headers in `_headers`
+- `sitemap.xml`, `robots.txt`, `llms.txt`
+- Schema.org JSON-LD on pages
 
-- Canonicals and sitemap use clean URLs (no `.html`)
-- Internal links use clean paths
-- Images resized/compressed for LCP
-- FAQ + ProfessionalService schema present
+## Restore point
 
-## Harden / Optimize done in this pass
-
-- Fixed invalid duplicate `</main>`
-- Canonical / sitemap / internal links aligned to clean URLs
-- Image compression + resize (couple 680 KB → ~114 KB, etc.)
-- Added `_redirects`, `_headers`, `llms.txt`, proper `404.html`
-- Cache headers for assets
-- HSTS preload-ready
+Before each release, prefer a small focused PR. If production regresses, revert that merge commit rather than undoing a large mixed history.
 
 ## Contact
 
-Site for James Allen, LPC / LMFT / LCDC — (281) 413-8063
+James Allen, LPC / LMFT / LCDC — (281) 413-8063  
+26205 Oak Ridge Drive, Suite 111, The Woodlands, TX 77380
