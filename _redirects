@@ -5,6 +5,7 @@
 /adhd-support                              /adhd-support/                              301
 /addiction-recovery                        /addiction-recovery/                        301
 /anger-management-conflict-resolution      /anger-management-conflict-resolution/      301
+/speaking-seminars                         /speaking-seminars/                         301
 
 # Stale old-site paths (Google still indexes these) → current pages
 /about_us                                  /about-james-allen/                         301
@@ -14,12 +15,11 @@
 /about_us.html                             /about-james-allen/                         301
 /about_us.htm                              /about-james-allen/                         301
 
-/seminars                                  /about-james-allen/                         301
-/seminars/                                 /about-james-allen/                         301
-/speaking                                  /about-james-allen/                         301
-/speaking-seminars                         /about-james-allen/                         301
-/speaking-seminars.html                    /about-james-allen/                         301
-/speaking_engagements                      /about-james-allen/                         301
+/seminars                                  /speaking-seminars/                         301
+/seminars/                                 /speaking-seminars/                         301
+/speaking                                  /speaking-seminars/                         301
+/speaking-seminars.html                    /speaking-seminars/                         301
+/speaking_engagements                      /speaking-seminars/                         301
 
 /services                                  /                                           301
 /forms                                     /                                           301
