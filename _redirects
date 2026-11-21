@@ -1,4 +1,4 @@
-# Force trailing slash on service pages
+# Force trailing slash on current pages
 /about-james-allen                         /about-james-allen/                         301
 /marriage-counseling                       /marriage-counseling/                       301
 /family-counseling                         /family-counseling/                         301
@@ -6,9 +6,36 @@
 /addiction-recovery                        /addiction-recovery/                        301
 /anger-management-conflict-resolution      /anger-management-conflict-resolution/      301
 
-# Legacy soft paths
+# Stale old-site paths (Google still indexes these) → current pages
+/about_us                                  /about-james-allen/                         301
+/about_us/                                 /about-james-allen/                         301
+/about-us                                  /about-james-allen/                         301
+/about.html                                /about-james-allen/                         301
+/about_us.html                             /about-james-allen/                         301
+/about_us.htm                              /about-james-allen/                         301
+
+/seminars                                  /about-james-allen/                         301
+/seminars/                                 /about-james-allen/                         301
+/speaking                                  /about-james-allen/                         301
+/speaking-seminars                         /about-james-allen/                         301
+/speaking-seminars.html                    /about-james-allen/                         301
+/speaking_engagements                      /about-james-allen/                         301
+
+/services                                  /                                           301
+/forms                                     /                                           301
+/forms/                                    /                                           301
+/forms.html                                /                                           301
+/FORMS                                     /                                           301
+/contact_us                                /#visit                                     301
+/request                                   /#visit                                     301
+
+/hipaa                                     /                                           301
+/hipaa_privacy                             /                                           301
+/privacy_policy                            /                                           301
+/privacy.html                              /                                           301
+
+# Soft in-page anchors
 /about     /about-james-allen/   301
-/services  /#services            302
 /contact   /#visit               302
 /faq       /#faq                 302
 /privacy   /                     302

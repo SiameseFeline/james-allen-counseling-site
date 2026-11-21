@@ -13,6 +13,7 @@
 - ADHD support (adults & children)
 - Addiction recovery
 - Anger management & conflict resolution
+- Speaking for schools, churches, and civic groups (by request)
 
 ## Credentials
 - Licensed Professional Counselor (LPC)
@@ -23,12 +24,12 @@
 
 ## Pages
 - / — Home
-- /about-james-allen — About James Allen
-- /marriage-counseling
-- /family-counseling
-- /adhd-support
-- /addiction-recovery
-- /anger-management-conflict-resolution
+- /about-james-allen/ — About James Allen (includes speaking)
+- /marriage-counseling/
+- /family-counseling/
+- /adhd-support/
+- /addiction-recovery/
+- /anger-management-conflict-resolution/
 
 ## Contact
-Call (281) 413-8063 to schedule. By appointment.
+Call (281) 413-8063 to schedule. By appointment only.
