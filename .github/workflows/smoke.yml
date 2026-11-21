@@ -1,0 +1,72 @@
+name: Smoke
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  smoke:
+    name: smoke
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Required files exist
+        run: |
+          set -euo pipefail
+          for f in index.html _redirects _headers robots.txt sitemap.xml llms.txt assets/style.css assets/site.js; do
+            test -f "$f" || { echo "Missing: $f"; exit 1; }
+          done
+          for d in about-james-allen marriage-counseling family-counseling adhd-support addiction-recovery anger-management-conflict-resolution; do
+            test -f "$d/index.html" || { echo "Missing: $d/index.html"; exit 1; }
+          done
+          echo "All required files present."
+
+      - name: No old contact strings in HTML
+        run: |
+          set -euo pipefail
+          if grep -RInE '281-363-2775|26600 Oak Ridge|Ste 20' --include='*.html' .; then
+            echo "Old phone or address found in HTML"
+            exit 1
+          fi
+          echo "No legacy contact strings."
+
+      - name: Validate site.js syntax
+        run: node --check assets/site.js
+
+      - name: Basic HTML sanity (doctype + title)
+        run: |
+          set -euo pipefail
+          for f in index.html about-james-allen/index.html marriage-counseling/index.html; do
+            head -c 200 "$f" | grep -qi '<!doctype html' || { echo "Bad doctype: $f"; exit 1; }
+            grep -qi '<title>' "$f" || { echo "Missing title: $f"; exit 1; }
+          done
+          echo "HTML sanity OK."
+
+      - name: Sitemap uses trailing-slash canonicals
+        run: |
+          set -euo pipefail
+          # All non-root locs should end with /
+          if grep -E '<loc>https://woodlandschristiancounseling.com/[^<]+[^/]</loc>' sitemap.xml; then
+            echo "Sitemap has non-trailing-slash path(s)"
+            exit 1
+          fi
+          echo "Sitemap path shape OK."
+
+      - name: Live smoke (production only)
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          set -euo pipefail
+          BASE="https://woodlandschristiancounseling.com"
+          for path in / /about-james-allen/ /marriage-counseling/ /assets/style.css /assets/img/james-allen.jpg /sitemap.xml; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "$BASE$path")
+            echo "$code $path"
+            test "$code" = "200" || exit 1
+          done
+          # Stale path must 301
+          code=$(curl -s -o /dev/null -w "%{http_code}" "$BASE/about_us")
+          echo "$code /about_us"
+          test "$code" = "301" || test "$code" = "302" || exit 1
+          echo "Live smoke OK."
