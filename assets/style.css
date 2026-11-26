@@ -753,3 +753,25 @@ footer a:hover { color: var(--pine); text-decoration: underline; }
   .btn { width: 100%; }
   .hero-ctas .btn { width: auto; flex: 1 1 auto; min-width: 140px; }
 }
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 13px;
+  color: var(--ink-3);
+  margin: 0 0 14px;
+}
+.breadcrumb a { color: var(--ink-2); text-decoration: none; }
+.breadcrumb a:hover { color: var(--pine); }
+
+/* page-hero aliases (safety if any page still uses them) */
+.page-hero { padding: 48px 0 0; }
+@media (min-width: 900px) { .page-hero { padding-top: 64px; } }
+.page-hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 40px;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .page-hero-grid { grid-template-columns: 1fr; gap: 28px; }
+}
