@@ -559,6 +559,9 @@ section h2 {
 }
 
 /* FAQ */
+.faq-list {
+  max-width: 720px;
+}
 .faq {
   border-bottom: 1px solid var(--line);
 }
@@ -580,6 +583,18 @@ section h2 {
   min-height: 56px;
 }
 .faq button:hover { color: var(--pine); }
+.faq button svg {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  color: var(--ink-3);
+  transition: transform 0.2s ease, color 0.15s ease;
+}
+.faq button:hover svg { color: var(--pine); }
+.faq.open button svg {
+  transform: rotate(45deg);
+  color: var(--brass);
+}
 .faq .answer {
   display: none;
   padding: 0 4px 20px;
@@ -589,6 +604,56 @@ section h2 {
   line-height: 1.6;
 }
 .faq.open .answer { display: block; }
+
+/* Section head + crisis note */
+.sec-head {
+  margin-bottom: 28px;
+}
+.sec-head .label { margin-bottom: 8px; }
+.sec-head h2 { margin: 0; }
+.crisis {
+  margin-top: 28px;
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+  color: var(--ink-2);
+  font-size: 14.5px;
+  line-height: 1.55;
+  max-width: 66ch;
+}
+.crisis strong { color: var(--ink); }
+
+/* Prose helpers used on About + service pages */
+.prose {
+  max-width: 66ch;
+}
+.prose p { margin: 0 0 14px; color: var(--ink-2); }
+.prose h3 {
+  font-size: clamp(20px, 3.2vw, 24px);
+  margin: 28px 0 12px;
+}
+.area-note {
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+  color: var(--ink-2);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.area-note strong { color: var(--ink); }
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 14.5px;
+  text-decoration: none;
+  color: var(--pine);
+}
+.card-link:hover { text-decoration: underline; }
 
 /* Visit / contact */
 .visit-grid {
