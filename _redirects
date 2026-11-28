@@ -21,7 +21,7 @@
 /speaking-seminars.html                    /speaking-seminars/                         301
 /speaking_engagements                      /speaking-seminars/                         301
 
-/services                                  /                                           301
+/services                                  /services/                                301
 /forms                                     /                                           301
 /forms/                                    /                                           301
 /forms.html                                /                                           301
@@ -42,3 +42,14 @@
 
 # www → apex
 https://www.woodlandschristiancounseling.com/*  https://woodlandschristiancounseling.com/:splat  301
+
+# New service pages
+/depression-counseling                     /depression-counseling/                     301
+/anxiety-counseling                        /anxiety-counseling/                        301
+/grief-trauma-counseling                   /grief-trauma-counseling/                   301
+/bipolar-counseling                        /bipolar-counseling/                        301
+/communication-skills                      /communication-skills/                      301
+/single-adult-relationships                /single-adult-relationships/                301
+/personal-relationships                    /personal-relationships/                    301
+/career-development                        /career-development/                        301
+/services/index.html                       /services/                                  301

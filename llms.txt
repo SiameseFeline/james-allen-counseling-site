@@ -7,30 +7,39 @@
 - Phone: (281) 413-8063
 - Address: 26205 Oak Ridge Drive, Suite 111, The Woodlands, TX 77380
 
-## Services
-- Marriage counseling
-- Family counseling
-- ADHD support (adults & children)
-- Addiction recovery
-- Anger management & conflict resolution
-- Speaking & seminars for schools, churches, and civic groups (22 topics)
+## Services hub
+- /services/ — Full catalog of counseling services
+
+## Core services
+- /marriage-counseling/ — Marriage & premarital counseling
+- /family-counseling/ — Family, parenting, blended families
+- /adhd-support/ — ADHD support for children, teens, and adults
+- /addiction-recovery/ — Alcohol, drugs, sex addiction, food patterns, other destructive cycles
+- /anger-management-conflict-resolution/ — Anger management and conflict resolution
+
+## Mood & mental health
+- /depression-counseling/
+- /anxiety-counseling/
+- /bipolar-counseling/
+- /grief-trauma-counseling/
+
+## Relationships & life
+- /communication-skills/
+- /single-adult-relationships/
+- /personal-relationships/
+- /career-development/
+
+## Other pages
+- /about-james-allen/ — About James Allen (LPC, LMFT, LCDC)
+- /speaking-seminars/ — Speaking for schools, churches, and civic groups
 
 ## Credentials
 - Licensed Professional Counselor (LPC)
 - Licensed Marriage & Family Therapist (LMFT)
 - Licensed Chemical Dependency Counselor (LCDC)
+- Certified Sex Addictions Specialist
 - 20+ years pastoral ministry & counseling experience
-- Biblical, solution-focused approach
-
-## Pages
-- / — Home
-- /about-james-allen/ — About James Allen
-- /speaking-seminars/ — Speaking & seminars (topic list + booking)
-- /marriage-counseling/
-- /family-counseling/
-- /adhd-support/
-- /addiction-recovery/
-- /anger-management-conflict-resolution/
+- Biblical, solution-focused approach when clients want it
 
 ## Contact
-Call (281) 413-8063 to schedule counseling or request a speaking date. By appointment.
+Call (281) 413-8063 to schedule. Serving The Woodlands, Spring, Conroe, Tomball, and Magnolia, Texas.
