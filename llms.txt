@@ -1,1 +1,45 @@
-PLACEHOLDER
+# James Allen & Associates — Christian Counseling
+
+> Professional Christian counseling for individuals, couples, and families in The Woodlands, Texas.
+
+## Site
+- Canonical: https://woodlandschristiancounseling.com/
+- Phone: (281) 413-8063
+- Address: 26205 Oak Ridge Drive, Suite 111, The Woodlands, TX 77380
+
+## Services hub
+- /services/ — Full catalog of counseling services
+
+## Core services
+- /marriage-counseling/ — Marriage & premarital counseling
+- /family-counseling/ — Family, parenting, blended families
+- /adhd-support/ — ADHD support for children, teens, and adults
+- /addiction-recovery/ — Alcohol, drugs, sex addiction, food patterns, other destructive cycles
+- /anger-management-conflict-resolution/ — Anger management and conflict resolution
+
+## Mood & mental health
+- /depression-counseling/
+- /anxiety-counseling/
+- /bipolar-counseling/
+- /grief-trauma-counseling/
+
+## Relationships & life
+- /communication-skills/
+- /single-adult-relationships/
+- /personal-relationships/
+- /career-development/
+
+## Other pages
+- /about-james-allen/ — About James Allen (LPC, LMFT, LCDC)
+- /speaking-seminars/ — Speaking for schools, churches, and civic groups
+
+## Credentials
+- Licensed Professional Counselor (LPC)
+- Licensed Marriage & Family Therapist (LMFT)
+- Licensed Chemical Dependency Counselor (LCDC)
+- Certified Sex Addictions Specialist
+- 20+ years pastoral ministry & counseling experience
+- Biblical, solution-focused approach when clients want it
+
+## Contact
+Call (281) 413-8063 to schedule. Serving The Woodlands, Spring, Conroe, Tomball, and Magnolia, Texas.
